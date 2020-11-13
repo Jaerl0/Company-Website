@@ -31,7 +31,7 @@ aside {
 }
 
 a:hover {
-  background-color: var(--blue);
+  background-color: var(--white);
   border-radius: 0.5rem;
   transition: 400ms ease-in-out;
 }
@@ -64,6 +64,19 @@ main {
   grid-column: 2/-1;
 }
 
+.aboutus p {
+  text-align: justify;
+  margin: 3vw;
+}
+
+main .fattext {
+  font-weight: bolder;
+}
+
+.faq {
+  margin-right: 25vw;
+}
+
 .content {
   /* display: grid; 
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,6 +99,13 @@ main {
   color: blue;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+    width: 100%;
+    grid-column: 1/-1;
+  }
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -104,8 +124,8 @@ footer .contact form {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
 }
 
 footer .contact h2 {
@@ -121,6 +141,22 @@ footer .contact label {
   font-size: 12px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+footer .about {
+  display: flex;
+  grid-column: 2/3;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vw;
+}
+
+footer .about a {
+  padding: 5px;
+  margin: 1vw;
+  color: var(--lightblue);
+  text-decoration: none;
+  font-family: Impact, sans-serif;
 }
 
 footer .socialmedia {
@@ -142,7 +178,8 @@ footer .socialmedia a {
 footer .socialmedia h2 {
   color: var(--blue);
   font-family: Impact, sans-serif;
-  padding: 5px;
+  font-size: medium;
+  text-align: center;
 }
 
 footer .socialmedia img {
