@@ -64,6 +64,18 @@ main {
   grid-column: 2/-1;
 }
 
+.mainpage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mainpage video {
+  width: 50vw;
+  height: 70vh;
+  align-self: center;
+}
+
 .aboutus p {
   text-align: justify;
   margin: 3vw;
@@ -71,10 +83,16 @@ main {
 
 main .fattext {
   font-weight: bolder;
+  margin-bottom: 1vh;
+}
+
+.faq p {
+  margin-top: 1vh;
 }
 
 .faq {
   margin-right: 25vw;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .content {
