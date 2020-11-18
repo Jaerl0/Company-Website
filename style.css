@@ -9,7 +9,7 @@ body {
   margin: 1vw;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 100px auto 1fr;
+  grid-template-rows: 200px auto 1fr;
   background-color: white;
 }
 
@@ -19,6 +19,23 @@ header {
   grid-column: 1/-1;
   background-color: chartreuse;
   align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header #logo {
+  width: 10vw;
+  padding-left: 5vw;
+}
+
+header #cart {
+  width: 5vw;
+  padding-right: 5vw;
+}
+
+header .headertext {
+  text-align: center;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 aside {
@@ -30,7 +47,13 @@ aside {
   margin-right: 5%;
 }
 
-a:hover {
+footer a:hover {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  transition: 400ms ease-in-out;
+}
+
+nav a:hover {
   background-color: var(--white);
   border-radius: 0.5rem;
   transition: 400ms ease-in-out;
@@ -50,7 +73,6 @@ aside nav {
   display: flex;
   background-color: var(--black);
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   grid-row: 2;
   grid-column: 1/2;
@@ -74,6 +96,8 @@ main {
   width: 50vw;
   height: 70vh;
   align-self: center;
+  border: solid 1rem;
+  border-color: var(--blue) var(--lightblue);
 }
 
 .aboutus p {
